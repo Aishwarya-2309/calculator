@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Calculator body */
+.calculator {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Display bar */
+#display {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #00ffb3;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Button grid container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Button style */
+button {
+    flex: 1 0 22%;
+    border: none;
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 10px;
+    background: #0b3d91;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px #062b66;
+}
+
+/* Glowing hover effect */
+button:hover {
+    background: #035397;
+    box-shadow: 0 0 15px #00ffb3, 0 0 30px #00ffb3;
+    transform: translateY(-3px);
+}
+
+/* Operator buttons */
+.btn-operator {
+    background: #ff7b00;
+    color: white;
+    box-shadow: 0 4px #b35900;
+}
+
+/* AC and Equal special buttons */
+.btn-clear {
+    background: #e63946;
+    box-shadow: 0 4px #a4161a;
+}
+
+.btn-equal {
+    background: #06d6a0;
+    box-shadow: 0 4px #058c69;
+    color: black;
+    flex: 1 0 47%;
+}
+
+.btn-clear:hover {
+    background: #ff4d4d;
+}
+
+.btn-operator:hover {
+    background: #ff9800;
+}

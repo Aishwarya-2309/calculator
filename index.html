@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="calculator text-center">
+        <h4 class="text-white mb-3">Modern Calculator</h4>
+
+        <!-- Display Screen -->
+        <input type="text" id="display" readonly placeholder="0" />
+
+        <!-- Buttons Section -->
+        <div class="button-container">
+            <!-- First row -->
+            <button class="btn-clear" id="ac">AC</button>
+            <button id="modulo">%</button>
+            <button id="square">x²</button>
+            <button class="btn-operator" data-operator="/">÷</button>
+
+            <!-- Second row -->
+            <button data-num="7">7</button>
+            <button data-num="8">8</button>
+            <button data-num="9">9</button>
+            <button class="btn-operator" data-operator="*">×</button>
+
+            <!-- Third row -->
+            <button data-num="4">4</button>
+            <button data-num="5">5</button>
+            <button data-num="6">6</button>
+            <button class="btn-operator" data-operator="-">−</button>
+
+            <!-- Fourth row -->
+            <button data-num="1">1</button>
+            <button data-num="2">2</button>
+            <button data-num="3">3</button>
+            <button class="btn-operator" data-operator="+">+</button>
+
+            <!-- Fifth row -->
+            <button data-num="0">0</button>
+            <button data-num=".">.</button>
+            <button class="btn-equal" id="equal">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
